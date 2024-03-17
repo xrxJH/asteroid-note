@@ -1,7 +1,9 @@
-import NextLogo from "./NextLogo";
-import SupabaseLogo from "./SupabaseLogo";
+import NextLogo from './NextLogo';
+import SupabaseLogo from './SupabaseLogo';
 
 export default function Header() {
+  console.log('Header');
+
   return (
     <div className="flex flex-col gap-16 items-center">
       <div className="flex gap-8 justify-center items-center">
@@ -10,6 +12,7 @@ export default function Header() {
           target="_blank"
           rel="noreferrer"
         >
+          <div>느아아</div>
           <SupabaseLogo />
         </a>
         <span className="border-l rotate-45 h-6" />
@@ -19,7 +22,7 @@ export default function Header() {
       </div>
       <h1 className="sr-only">Supabase and Next.js Starter Template</h1>
       <p className="text-3xl lg:text-4xl !leading-tight mx-auto max-w-xl text-center">
-        The fastest way to build apps with{" "}
+        The fastest way to build apps with{' '}
         <a
           href="https://supabase.com/?utm_source=create-next-app&utm_medium=template&utm_term=nextjs"
           target="_blank"
@@ -27,8 +30,8 @@ export default function Header() {
           rel="noreferrer"
         >
           Supabase
-        </a>{" "}
-        and{" "}
+        </a>{' '}
+        and{' '}
         <a
           href="https://nextjs.org/"
           target="_blank"
