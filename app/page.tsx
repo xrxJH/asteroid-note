@@ -4,6 +4,7 @@ import { createClient } from '@/utils/supabase/server';
 import ConnectSupabaseSteps from '@/components/tutorial/ConnectSupabaseSteps';
 import SignUpUserSteps from '@/components/tutorial/SignUpUserSteps';
 import Header from '@/components/Header';
+import { Button } from '@/components/ui/button';
 
 export default async function Index() {
   const canInitSupabaseClient = () => {
@@ -25,11 +26,14 @@ export default async function Index() {
       <nav className="flex justify-center w-full h-16 border-b border-b-foreground/10">
         <div className="flex items-center justify-between w-full max-w-4xl p-3 text-sm">
           <DeployButton />
+          <Button variant="secondary">얍</Button>
           {isSupabaseConnected && <AuthButton />}
         </div>
       </nav>
-
-      <div className="flex flex-col flex-1 max-w-4xl gap-20 px-3 opacity-0 animate-in">
+      <div className=" bg-fuchsia-400 flex flex-col flex-1 max-w-4xl">
+        sdddddddddddddddddddd
+      </div>
+      <div className=" bg-fuchsia-400 flex flex-col flex-1 max-w-4xl gap-20 px-3 opacity-0 animate-in">
         <Header />
         <main className="flex flex-col flex-1 gap-6">
           <h2 className="mb-4 text-4xl font-bold">Next steps</h2>
